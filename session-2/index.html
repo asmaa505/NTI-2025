@@ -3,30 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Session 2</title>
+    <title> practice </title>
+    <style>
+        body{
+            height: 150vh;
+            background: linear-gradient(to top left,  pink 0% 40%, lightblue 40% 65%, yellow 70% 100%);
+
+
+
+            /* background: radial-gradient( pink, lightblue, yellow); */
+        }
+    </style>
 </head>
 <body>
-    <audio controls>
-        <source src="" type="mp3">
-        <source src="" type="">
-        your browser doesnt support audio tag OR Codecs
-    </audio>
+    
+    <table border="2">
+        <colgroup>
+            <col span="1" style="background-color: pink;">
+            <col span="1" style="background-color: lightblue;">
+            <col span="1" style="background-color: aqua;">
+        </colgroup>
+        <thead>
+            <th>topic</th>
+            <th>instructor</th>
+            <th>phone number</th>
+            <th>media</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML5</td>
+                <td rowspan="3">ENG.fatma Akram</td>
+                <td rowspan="3">1253</td>
+                <td>
+                    <a href="https://www.bing.com/ck/a?!&&p=b5836ba8ef3534d67880506c994a586469280edcd6e7759b6bf28eac91ba9bcfJmltdHM9MTc1MTg0NjQwMA&ptn=3&ver=2&hsh=4&fclid=2e59c7f0-b2b0-6a49-3527-d21eb3cc6b24&psq=html+entity+and&u=a1aHR0cHM6Ly93d3cudzNzY2hvb2xzLmNvbS9odG1sL2h0bWxfZW50aXRpZXMuYXNw&ntb=1" target="_blank">
+                        <img src="./img/HTML.jpg" alt="html image" width="80px" height="70px" >
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>
+                    <a href="https://www.bing.com/ck/a?!&&p=d98a9bfca8f83a77eb58998c29305936936905684ba50a46db4f0bf8e2a33c56JmltdHM9MTc1MTg0NjQwMA&ptn=3&ver=2&hsh=4&fclid=2e59c7f0-b2b0-6a49-3527-d21eb3cc6b24&psq=css+entity+and&u=a1aHR0cHM6Ly93d3cudzNzY2hvb2xzLmNvbS9jc3NyZWYvY3NzX2VudGl0aWVzLnBocA&ntb=1" target="_blank">
+                        <img src="./img/css.jpg" alt=" css image" width="70px" height="70px">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>
+                    <a href="https://www.bing.com/ck/a?!&&p=380ee87968c224f053be3ceb8701e4ac20968a073bf1d9e2ef5a81d3dc4deeeaJmltdHM9MTc1MTg0NjQwMA&ptn=3&ver=2&hsh=4&fclid=2e59c7f0-b2b0-6a49-3527-d21eb3cc6b24&psq=js+entity+and&u=a1aHR0cHM6Ly93d3cudzNzY2hvb2xzLmNvbS9odG1sL2h0bWxfZW50aXRpZXMuYXNw&ntb=1" target="_blank">
+                        <img src="./img/js.jpg" alt="js image" width="80px" >
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
-    <video width="50px" height="50px" controls>
-        <source src="" type="">
-        <source src="" type="">
-        <source src="" type="">
-        your browser doesnt support video tag OR Codecs
-    </video>
+    <!-- table end -->
+    
+    <br>
+    <hr><hr><hr>
+    <br>
+    <h2> Register Form </h2>
+    <label for="name"> Enter your name: </label>
+    <input type="text" id="name" placeholder="enter yout name"><br>
+
+    <label for="email"> Enter your email: </label>
+    <input type="email" id="email" placeholder="enter yout email"><br>
+
+    <label for="phone"> Enter your phone: </label>
+    <input type="phone" id="phone" placeholder="enter yout phone"><br>
+    
+    <label for="date"> Enter your Birthday: </label>
+    <input type="date" id="date" placeholder="enter yout Birthday"><br>
+    
+    <label for="age"> Enter your age: </label>
+    <input type="number" id="age" placeholder="enter yout age"><br>
+    
+    <label for="password"> Enter your password: </label>
+    <input type="password" id="password" placeholder="enter yout password"><br> 
+    <br><hr><br>
+    
+    <label for="">what is yout gender? </label>
+    <input type="radio" name="g">Male
+    <input type="radio" name="g">Femal
+    
+    <br><hr><br>
+    
+    <label for=""> what do you prefer to study? </label>
+    <input type="checkbox" name="subject">HTML
+    <input type="checkbox" name="subject">CSS
+    <input type="checkbox" name="subject">JS
+
 </body>
 </html>
-
-
-<!-- 
-
-controls   ->  to show control button like (play, pause, volume controls)
-source     ->  to add this video or audio with diffrent "dodec" to make sure brower will be able to play it
-src        ->  to attach video or audio path
-type       ->  to add video or audio Codec
-
--->

@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient(pink, lightblue);
+    height: 200vh;
+}
+
+h1{
+    background-color: plum;
+    padding: 20px;
+    margin: 2vh auto;
+
+    border: 2px double red;
+    width: 13rem;
+    text-align: center;
+
+}
+/* 
+ul{
+    background-color: peru;
+
+} */
+
+
+.send{
+    background-color: black;
+    color: white;
+    padding: 8px;
+    width: 250px;
+    border-radius: 0 40px 40px 0px;
+    margin: 20px auto;
+}
+
+.replay{
+    background-color: white;
+    color: black;
+    padding: 8px;
+    width: 250px;
+    border-radius:  40px 0  0 40px;
+    margin: 20px auto;
+    text-align: end;
+}
+
+.parent{
+    position: relative;
+}
+
+.parent img{
+    width: 500px;
+}
+
+.layout{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.442);
+    position: absolute;
+    top: 0;
+
+    transition: 1s;
+
+    &:hover{
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+}
+
+.list{
+    width: 20rem;
+    margin: 3rem 5rem;
+}
+
+.list ul li{
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    list-style: none;
+    transition: 1s;
+}
+
+
+.list ul li:first-child
+{
+    background-color: red;
+}
+
+.list ul li:last-child{
+    background-color: black;
+}
+
+
+.list ul li:nth-child(even){
+    background-color: white;
+    color: rgb(247, 232, 20);
+}
+
+
+.list ul li:hover{
+    background-color: rgba(148, 148, 144, 0.756);
+}
+
+
+.content{
+    width: 19rem;
+    margin: 5rem auto;
+}
+
+
+h2{
+    position: relative;
+    margin-left: 1rem;
+}
+
+h2::after{
+    content: "";
+    width: 40px;
+    height: 3px;
+    position: absolute;
+    background-color: red;
+    bottom: -3px;
+    left: 0;
+}

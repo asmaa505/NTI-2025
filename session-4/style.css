@@ -1,0 +1,175 @@
+*{
+    /* height: 65svw; */
+    
+    margin: 0;
+    padding: 0;
+    
+    position: relative;
+    text-decoration: none;
+    border: none;
+    color: white;
+    background-color: var(--my-pink);
+
+    box-sizing: border-box;
+    outline: none;
+    
+}
+
+:root{
+    --my-pink:black;
+    --my-yellow: rgb(119, 231, 27);
+}
+
+/*! header start */
+
+body{
+    max-width: 100svw;
+    height: 100svh;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+
+    width: 100%;
+
+    background-color: var(--my-pink);
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+
+}
+
+nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+
+}
+
+nav ul a{
+    color: var(--my-yellow);
+}
+
+h1{
+    color: var(--my-yellow);
+}
+
+.btn{
+    display: flex;
+    gap: 10px;
+}
+
+.btn button
+{
+    background-color: var(--my-yellow);
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: 2px solid var(--my-yellow);
+
+    &:hover{
+        
+        background-color: rgba(173, 216, 230, 0);
+    }
+}
+
+h1::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 8px;
+}
+
+/*! header end */
+
+/*! about section start */
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    height: 80%;
+
+    /* background-image: radial-gradient( var(--my-yellow) , black  ) ; */
+}
+
+.content{
+    width: 50%;
+    background-color: transparent;
+}
+
+.content p{
+    margin: 30px 0;
+    width: 70%;
+
+}
+
+.about img{
+    box-shadow: 5px 5px 15px var(--my-yellow);
+    /* border: 2px var(--my-yellow) double; */
+
+}
+
+.content h2{
+    text-decoration: underline wavy var(--my-yellow);
+    margin-bottom: 5px;
+}
+
+/*! about section end */
+
+@media(max-width : 768px)
+{
+    header{
+        flex-direction: column;
+        gap: 5px;
+    }
+    nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about{
+        margin-top: 30px;
+    }
+    
+
+}
+
+@media(max-width: 786px){
+    .about{
+        flex-direction: column-reverse;
+        padding-top: 50px;
+        gap: 30px;
+    }
+
+    .about img {
+        margin-top: 80px;
+        width: 200px;
+    }
+
+    .about p{
+        width: 100%;
+    }
+
+    header button{
+        display: none;
+    }
+}
+

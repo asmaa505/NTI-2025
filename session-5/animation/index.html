@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+
+        body{
+            background-color: black;
+            height: 100svh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+        }
+
+        div{
+            width: 100px;
+            height: 140px;
+            background-image: radial-gradient(  rgb(193, 36, 62));
+
+            box-shadow: 5px 5px 20px rgb(0, 64, 255);
+            color: white;
+
+
+            transition: transform 2s;
+
+            &:hover{
+                transform: scale(0.96) rotate(360deg) ;
+                border-radius: 60px;
+                box-shadow: 5px 5px 20px rgb(255, 0, 0);
+            }
+        }
+    </style>
+</head> 
+<body>
+    <div> Dont <br> hover <br> meeeeee</div>
+</body>
+</html>

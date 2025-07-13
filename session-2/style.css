@@ -5,6 +5,12 @@ body{
     background-repeat: no-repeat;
     /* background-size: cover; */
     background-position:  right;
+    margin-left: 5rem;
+}
+
+select{
+    border: none;
+    margin-left: 0;
 }
 
 .m{
@@ -22,7 +28,8 @@ body{
     flex-direction: row;
     gap: 30px;
 }
-.l a{
+.l a,
+label{
     text-decoration: none;
     color: gray;
 

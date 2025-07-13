@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        /* .animation{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            animation-name: ani;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        } */
+
+
+
+
+
+
+        body{
+            background-color: #1e1e1e;
+        }
+
+        /* @keyframes ani{
+            0%{
+                background-color: red;
+                transform: translate(0 , 0) rotate(45deg);
+            }
+
+            25%{
+                background-color: rgb(241, 13, 51);
+                transform: translate(500px , 0) rotate(90deg);
+                border-radius: 15%;
+            }
+
+            50%{
+                background-color: pink;
+                transform: translate(500px , 500px) rotate(135deg);
+                border-radius: 35%;
+            }
+
+            75%{
+                background-color: rgb(94, 7, 233);
+                transform: translate(0 , 500px) rotate(180deg);
+                border-radius: 50%;
+            }
+
+            100%{
+                background-color: aquamarine;
+                transform: translate(0 , 0) rotate(255deg);
+                border-radius: 100%;
+            }
+            
+        } */
+
+
+        .content{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .eye{
+            background-color: antiquewhite;
+            width: 250px;
+            height: 400px;
+            border-radius: 100px;
+
+            position: relative;
+        }
+
+        .black{
+            width: 100px;
+            height: 100px;
+            background-color: #1e1e1e;
+            position: absolute;
+            bottom: 80px;
+            border-radius: 50px;
+
+            animation-name: eyes;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        .white{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            background-color: white;
+            border-radius: 50px;
+            bottom: 18px;
+            right: 9px;
+
+            animation-name: whit;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+
+
+
+        @keyframes eyes{
+            0%{
+                transform: translate(0 , 0);
+            }
+
+            50%{
+                transform: translate(130px , 0);
+            }
+
+            100%{
+                transform: translate( 0 , 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="animation"></div> -->
+
+    <h1>WOW! now I can see you</h1>
+    <div class="content">
+        <div class="eye">
+            <div class="black">
+                <div class="white"></div>
+            </div>
+        </div>
+        <div class="eye">
+            <div class="black">
+                <div class="white"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

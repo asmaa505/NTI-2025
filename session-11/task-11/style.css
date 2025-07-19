@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    outline: none;
+}
+body{
+    background-color: #1e1e1e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100svw;
+    height: 100svh;
+    overflow-x: hidden;
+}
+
+form{
+    width: 40%;
+    height: 75%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-top: 4em;
+    flex-direction: column;
+    gap: 35px;
+    border: 2px pink solid;
+}
+
+form input{
+    width: 50%;
+    height: 9%;
+    background-color: transparent;
+    border-bottom: pink solid 2px;
+    color: antiquewhite;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+form button{
+    width: 40%;
+}
+
+h2::before{
+    content: "|";
+    animation: form 3s infinite ease-in-out;
+    color: pink;
+    
+}
+
+@keyframes form{
+    0%{
+        content: "Reg";
+    }
+    15%{
+        content: "Regist";
+    }
+    35%{
+        content: "Registra";
+    }
+    55%{
+        content: "Registration ";
+    }
+    75%{
+        content: "Registration Fom";
+    }
+    90%{
+        content: "Registration Form";
+    }
+    100%{
+        content: "Registration Form...";
+    }
+}
+
+.btn{
+    width: 45%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.btn3{
+    width: 35%;
+    height: 65%;
+    border: 2px pink solid;
+    background-color: transparent;
+    border-radius: 10px;
+    color: rgb(251, 217, 217);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 1s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+table{
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    min-height: 6%;
+    margin: auto;
+    position: relative;
+    margin-top: 4em;
+}
+
+th , tr , td{
+    border: 2px solid white;
+    width: 30%;
+}
+
+thead{
+    background-color: rgb(9, 157, 249);
+}
+
+.reset{
+    padding: 12px 18px;
+    border: 2px solid lightskyblue;
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+    position: absolute;
+    left: 15em;
+    bottom: 3em;
+    &:hover{
+        transform: scale(1.1);
+    }
+
+}
+
+

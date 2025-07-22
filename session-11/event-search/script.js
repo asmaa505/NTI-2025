@@ -1,5 +1,5 @@
 
-// !      mouse events
+// !      1.mouse events
 // todo           Event	        Description
 // click	        User clicks an element
 // dblclick	    Double click
@@ -17,7 +17,7 @@ let h1 = document.querySelector(`#h1`);
 
 // click        //press
 // button.addEventListener("click", (e)=>{
-//     e.preventDefault();
+//     //!  e.preventDefault();     not important
 //     h1.innerHTML += `
 //                         asmaa `
 // });
@@ -31,15 +31,15 @@ let h1 = document.querySelector(`#h1`);
 // });
 
 
-// mousedown         press
+// mousedown         press == click
 // button.addEventListener("mousedown", (e)=>{
-//     e.preventDefault();
+//     // e.preventDefault();
 //     h1.innerHTML += `
 //                         asmaa `
 // });
 
-// mouseup
-// button.addEventListener("mousedown", (e)=>{
+// mouseup          press == click
+// button.addEventListener("mouseup", (e)=>{
 //     e.preventDefault();
 //     h1.innerHTML += `
 //                         asmaa `
@@ -70,7 +70,7 @@ let h1 = document.querySelector(`#h1`);
 // });
 
 
-// mouseover
+// mouseover == mousesnter
 // button.addEventListener("mouseover", (e)=>{
 //     e.preventDefault();
 //     h1.innerHTML += `
@@ -78,7 +78,7 @@ let h1 = document.querySelector(`#h1`);
 // });
 
 
-// mouseout
+// mouseout     == mouseleave
 // button.addEventListener("mouseout", (e)=>{
 //     e.preventDefault();
 //     h1.innerHTML += `
@@ -148,14 +148,14 @@ let ol  = document.querySelector(`#ol`);
 let form = document.querySelector(`#f`);
 
 // submit 
-// form.addEventListener("submit" , (e)=>{
-//     e.preventDefault();
-//     ol.innerHTML += 
-//                     ` <li> ${inn.value} </li> `
-// });  
+form.addEventListener("submit" , (e)=>{
+    e.preventDefault();
+    // ol.innerHTML += 
+    //                 ` <li> ${inn.value} </li> `
+});  
 
 
-//!  change
+//!  change       with  select
 // form.addEventListener("change" , (e)=>{
 //     e.preventDefault();
 //     ol.innerHTML += 
@@ -187,8 +187,8 @@ let form = document.querySelector(`#f`);
 // });
 
 
-//  reset
-form.addEventListener("reset" , (e)=>{
-    e.preventDefault();
-    document.write(`reset form`)
-});
+//  reset     <input type="rese"> 
+// form.addEventListener("reset" , (e)=>{
+//     e.preventDefault();
+//     document.write(`reset form`)
+// });

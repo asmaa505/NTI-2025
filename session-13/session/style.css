@@ -1,0 +1,37 @@
+
+body {
+    background-image: url(./bg.jpg); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+.container2{
+    margin-top: 10em;
+}
+
+.search-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+.search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.icon i{
+    font-size: 25px;
+    background-color: transparent;
+    &:hover{
+        color: antiquewhite;
+        background-color: rgba(66, 65, 65, 0.716);
+    }
+}
+
